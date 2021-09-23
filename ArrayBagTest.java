@@ -28,6 +28,36 @@ public class ArrayBagTest
 		aBag.clear();
       testIsEmpty(aBag, true);
 		displayBag(aBag);
+
+      System.out.println("\nTwo new bags are created...");
+      String[] contentsOfBag1 = {"A", "B", "B", "B", "C", "C", "D"};
+		String[] contentsOfBag2 = {"B", "B", "C", "D", "E", "F"};
+      BagInterface<String> Bag1 = new ResizableArrayBag<>(contentsOfBag1);
+      BagInterface<String> Bag2 = new ResizableArrayBag<>(contentsOfBag2);
+
+      System.out.println("One bag contains " + Bag1.getCurrentSize() + " string(s), as follows:");
+      Object[] bag1_Array = Bag1.toArray();
+      for (int i = 0; i < bag1_Array.length; i++)
+		{
+			System.out.print(bag1_Array[i] + " ");
+		}
+      System.out.println("\nThe other bag contains " + Bag2.getCurrentSize() + " string(s), as follows:");
+      Object[] bag2_Array = Bag2.toArray();
+      for (int i = 0; i < bag2_Array.length; i++)
+		{
+			System.out.print(bag2_Array[i] + " ");
+		}
+      System.out.println("");
+
+      System.out.println("\nUnion two bags testing...");
+		testUnion(Bag1, Bag2);
+
+      System.out.println("\nIntersection two bagstesting...");
+      testIntersection(Bag1, Bag2);
+
+      System.out.println("\nDifference of two bagstesting...");
+      testDifference(Bag1, Bag2);
+
 	} // end main
 	
    // Tests the method add.
@@ -122,6 +152,43 @@ public class ArrayBagTest
 		
 		System.out.println();
 	} // end displayBag
+
+   // Tests the method union
+   private static void testUnion(BagInterface<String> BagA, BagInterface<String> BagB)
+	{
+      System.out.println("The combination of these two bags contains " + BagA.union(BagB).getCurrentSize() + " string(s), as follows:");
+      Object[] bagU_Array = BagA.union(BagB).toArray();
+      for (int i = 0; i < bagU_Array.length; i++)
+		{
+			System.out.print(bagU_Array[i] + " ");
+		}         
+      System.out.println("");         
+	} // end testUnion
+
+   // Tests the method intersection
+   private static void testIntersection(BagInterface<String> BagA, BagInterface<String> BagB)
+	{
+      System.out.println("The intersection of these two bags contains " + BagA.intersection(BagB).getCurrentSize() + " string(s), as follows:");
+      Object[] bagI_Array = BagA.intersection(BagB).toArray();
+      for (int i = 0; i < bagI_Array.length; i++)
+		{
+			System.out.print(bagI_Array[i] + " ");
+		} 
+      System.out.println("");
+   } // end testIntersection
+
+   // Tests the method difference
+   private static void testDifference(BagInterface<String> BagA, BagInterface<String> BagB)
+	{
+      System.out.println("The difference of the first bag from the second bag contains " + BagA.difference(BagB).getCurrentSize() + " string(s), as follows:");
+      Object[] bagD_Array = BagA.difference(BagB).toArray();
+      for (int i = 0; i < bagD_Array.length; i++)
+		{
+			System.out.print(bagD_Array[i] + " ");
+		} 
+      System.out.println("");
+   } // end testDifference
+
 } // end ArrayBagTest
 /*
 
