@@ -2,6 +2,7 @@
    An interface that describes the operations of a bag of objects.
    @author Huijun Hu
    @author Jiyu Liu
+   @version 1.0
 */
 public interface BagInterface<T>
 {
@@ -59,5 +60,5 @@ public interface BagInterface<T>
 	/** Distingguish the entries in called bag that are not in parameter bag.
 		 @param otherBag  The bag collection to be compared with.
 		 @return  A new bag collection consists of contents in only called bag but not parameter bag.*/
-	public BagInterface<T> difference(BagInterface<T> anotherBag);
+	public BagInterface<T> difference(BagInterface<T> otherBag);
 } // end BagInterface
