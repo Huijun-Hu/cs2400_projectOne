@@ -2,8 +2,8 @@ import java.util.Arrays;
 /**
    A class that implements a bag of objects by using an array.
 	The bag is never full.
-   @author Frank M. Carrano, Timothy M. Henry
-   @version 5.0
+   @author Huijun Hu
+   @version 2.0
 */
 public final class ResizableArrayBag<T> implements BagInterface<T>
 {
