@@ -1,7 +1,6 @@
 /** A demonstration of the class ResizableArrayBag
-    @author Frank M. Carrano
-    @author Timothy M. Henry
-    @version 5.0
+    @author Huijun Hu
+    @version 2.0
 */
 public class ArrayBagTest
 {
