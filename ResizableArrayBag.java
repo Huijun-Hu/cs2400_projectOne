@@ -277,7 +277,7 @@ public final class ResizableArrayBag<T> implements BagInterface<T>
 		T[] tempArray = this.toArray();
 		BagInterface<T> resultBag = new ResizableArrayBag<T>(tempArray);
 
-		T[] commonEntries = this.union(otherBag).toArray();
+		T[] commonEntries = this.intersection(otherBag).toArray();
 		BagInterface<T> commonItemBag = new ResizableArrayBag<T>(commonEntries);
 		for (T item : tempArray){
 			if (commonItemBag.contains(item)){
