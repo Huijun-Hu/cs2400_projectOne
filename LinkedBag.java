@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
 
 A class of bags whose entries are stored in a chain of linked nodes.
@@ -358,3 +359,8 @@ public BagInterface < T > difference(BagInterface < T > otherBag) {
 }
 
 } // end LinkedBag
+=======
+public class LinkedBag {
+    
+}
+>>>>>>> 350bc5a (Huijun - Initial files)

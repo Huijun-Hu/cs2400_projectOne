@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Arrays;
 
 public class LinkedBagTest {
@@ -33,3 +34,8 @@ public class LinkedBagTest {
 	}
 
 }
+=======
+public class LinkedBagTest {
+    
+}
+>>>>>>> 350bc5a (Huijun - Initial files)
