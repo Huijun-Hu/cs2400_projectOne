@@ -6,17 +6,17 @@ Group name : HuCodes Members : Huijun Hu, Jiyu Liu
 Member’s contribution:
 
 @author: Huijun Hu
-
-BagInterface.java
-ResizableArrayBag.java
-ArrayBagTest.java
-JavaDoc/
-Big O Table 1
+ - BagInterface.java
+ - ResizableArrayBag.java
+ - ArrayBagTest.java
+ - JavaDoc/
+ - Big O Table 1
+ - 
 @author: Jiyu Liu
-
-LinkedBag.java
-LinkedBagTest.java
-Big O Table 1
+ - LinkedBag.java
+ - LinkedBagTest.java
+ - Big O Table 1
+ - 
 Extra features : unit test class using some framework)
 
 iv) A link to your screencast on some video streaming website. The screen cast should introduce your names and demo run your code, and each person should talk about their code briefly. Please make it <5 minutes. (Hint: you can edit the video – concatenate/delete video sections.)
