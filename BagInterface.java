@@ -1,8 +1,7 @@
 /**
    An interface that describes the operations of a bag of objects.
-   @author Frank M. Carrano
-   @author Timothy M. Henry
-   @version 5.0
+   @author Huijun Hu
+   @author Jiyu Liu
 */
 public interface BagInterface<T>
 {
